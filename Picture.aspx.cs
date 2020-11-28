@@ -38,7 +38,7 @@ namespace Lab3
         {
             if (COUNTNOW == 1)
             {
-                System.Windows.Forms.MessageBox.Show("已经是第一个文件了!", "error");
+                System.Windows.Forms.MessageBox.Show("已经是第一个文件了!", "error");///
                 return;
             }
             if (count ==0 )
