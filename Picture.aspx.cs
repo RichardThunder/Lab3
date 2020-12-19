@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +11,7 @@ namespace Lab3
     {
 
         static string fileName;
-        static int count= System.IO.Directory.GetFiles(@"G:/web/Lab3/Image/").Length;//读取文件夹下图片数量来初始化Count计数器
+        static int count= System.IO.Directory.GetFiles(@"E:/web/Lab3/Image/").Length;//读取文件夹下图片数量来初始化Count计数器
         static int COUNTNOW = count;//当前页面位置
         //int MAX = 100;//
         //static String[] FILENAME = new String[100];//eexb
@@ -27,7 +27,7 @@ namespace Lab3
                 COUNTNOW = count;
                 fileName = Upload.FileName;
                 string strExt = System.IO.Path.GetExtension(fileName);
-                string savePath = @"G:/web/Lab3/Image/" +count+".jpg";
+                string savePath = @"E:/web/Lab3/Image/" +count+".jpg";
               
                 Upload.SaveAs(savePath);
                 Image1.ImageUrl = "http://127.0.0.1:1677/Image/" + count +".jpg";
